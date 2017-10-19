@@ -1,0 +1,15 @@
+module testbench_for_ripple;
+
+  logic [3:0] Sum, A, B;
+  logic Cin, Cout;
+
+  ripple g1 (.*);
+
+initial
+  A, B, Cin = 0;
+  always begin
+    #5ns A++;
+    #5ns B++;
+  end
+
+endmodule 
